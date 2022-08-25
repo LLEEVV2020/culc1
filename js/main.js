@@ -670,6 +670,7 @@ function getData(i) {
   let spollers__wrapper =  document.querySelector(".spollers__wrapper");
   spollers__wrapper.style.display = "block";
 
+
 }
 
 
@@ -720,11 +721,13 @@ cities2.setChoices(
   arrObjects2,
 );
 
-function getChange(i, index) {
+function getChange(i, index, city) {
 
+  // если нажиаем на красную кнопку
   if(index === undefined ){
     index = dataRegion[i].index;
     let region = dataRegion[i].region;
+    let city = dataRegion[i].city;
 
     for (let j = 0; j < oblastAll.length; j++) {
       let objRegion3 = dataRegion[oblastAll[j].dataset.region];
@@ -732,6 +735,14 @@ function getChange(i, index) {
         i = j;
       } 
     }
+
+    cities2.setChoiceByValue(city);
+  }
+  if(city !== undefined){
+    let city = dataRegion[i].city;
+
+    cities2.setChoiceByValue(city);
+    
   }
 
   let addSelect =  document.querySelector('.add_select');
@@ -752,8 +763,11 @@ function getChange(i, index) {
   
   });
 
+  // dataRegio
+
   countres.setChoiceByValue('Россия');
   cities.setChoiceByValue(oblastAll[i].dataset.value);
+
   
 
   let add_select =  document.querySelector('.add_select');
@@ -767,7 +781,7 @@ cities.passedElement.element.addEventListener('change', function(e) {
   for (let i = 0; i < oblastAll.length; i++) {
     let objRegion3 = dataRegion[oblastAll[i].dataset.region];
     if(objRegion3.region === e.detail.value ){
-      getChange(i, objRegion3.index);
+      getChange(i, objRegion3.index, objRegion3.city);
     } 
   }
 });
