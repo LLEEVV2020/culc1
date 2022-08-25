@@ -1,0 +1,295 @@
+<section class="climate">
+	<div class="container">
+		<form action="#" class="climate__form">
+			<ul class="climate__list">
+				<li class="climate__item">
+					<div class="climate__spollers-box">
+						<div class="climate__spollers spollers" data-spollers>
+							<div class="spollers__item">
+								<div class="spollers__box-title" data-spoller>
+									<h2 class="climate__title spollers__title title title--left title--celsuis">
+										климатические параметры:
+										<span class="climate__span">Внутри +20°С (55%) Снаружи -10°С (85%)</span>
+									</h2>
+								</div>
+								<div class="spollers__body">
+									<div class="spollers__wrapper">
+										<ul class="spollers__list">
+											<li class="spollers__list-item">
+												<p class="spollers__text">Целюлюза (эковата)</p>
+											</li>
+											<li class="spollers__list-item">
+												<p class="spollers__text">Целюлюза (эковата)</p>
+											</li>
+											<li class="spollers__list-item">
+												<p class="spollers__text">Целюлюза (эковата)</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="climate__item">
+					<h2 class="climate__title title title--left title--wall">
+						Выберите стеновой материал для расчета
+					</h2>
+					<div class="climate__box">
+						<label for="range" class="climate__label">Тепловая защита</label>
+						<input type="range" class="climate__range range" />
+						<div class="climate__span-group">
+							<span class="climate__range-span">Rc</span>
+							<span class="climate__range-span">Rэ</span>
+							<span class="climate__range-span">Rт</span>
+						</div>
+					</div>
+				</li>
+				<li class="climate__item">
+					<div class="climate__box-wrap">
+						<div class="climate__box-inner">
+							<h3 class="climate__subtitle subtitle subtitle--left subtitle--small subtitle--bold">
+								Внутри
+							</h3>
+							<table class="climate__table">
+								<thead>
+									<tr>
+										<th>№</th>
+										<th>Тип</th>
+										<th class="left">Материал</th>
+										<th>Толщина, мм</th>
+										<th>λ</th>
+										<th>μ (Rп)</th>
+										<th>Управление</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1.</td>
+
+										<td></td>
+										<td class="left">
+											<button class="table__button">Выберите слой</button>
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<h3 class="climate__subtitle subtitle subtitle--left subtitle--small subtitle--bold">
+							Материал
+						</h3>
+						<div class="climate__box-inner">
+							<h3 class="climate__subtitle subtitle subtitle--left subtitle--small subtitle--bold">
+								Снаружи
+							</h3>
+							<select name="material" id="material" class="climate__select">
+								<option value="0">Выберите наружный материал (с фасада)</option>
+								<option value="1">Выберите наружный материал2</option>
+								<option value="2">Выберите наружный материал3</option>
+							</select>
+						</div>
+					</div>
+					<div class="climate__box-wrap">
+						<h2 class="climate__title title title--left title--compared">
+							Сравните соответствие полученного сопротивления теплопередачи с
+							нормами для вашего региона
+						</h2>
+						<div class="climate__tabs-group">
+							<button class="climate__tab tab tab--active">
+								Тепловая защита
+							</button>
+							<button class="climate__tab tab">Влагонакопление</button>
+							<button class="climate__tab tab">Тепловые потери</button>
+						</div>
+						<div class="climate__tab-content">
+							<div class="climate__box-inner">
+								<h3 class="climate__subtitle subtitle subtitle--left subtitle--small subtitle--bold">
+									Слои конструкции (изнутри наружу)
+								</h3>
+								<table class="climate__table">
+									<thead>
+										<tr>
+											<th>№</th>
+											<th>Тип</th>
+											<th class="left">Материал</th>
+											<th>Толщина</th>
+											<th>λ</th>
+											<th>R</th>
+											<th>Tmax</th>
+
+											<th>Tmin</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td></td>
+											<td></td>
+											<td class="left">Сопротивление тепловосприятию</td>
+											<td></td>
+											<td></td>
+											<td>0,11</td>
+											<td>+20,0</td>
+
+											<td>+18,8</td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td class="left">Сопротивление теплоотдаче</td>
+											<td></td>
+											<td></td>
+											<td>0,09</td>
+											<td>-10,0</td>
+
+											<td>-10,0</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<h3 class="climate__subtitle subtitle subtitle--left subtitle--small subtitle--bold">
+								Сопротивление теплопередаче: 0.00 (м²•˚С)/Вт
+							</h3>
+
+							<div class="climate__box-inner">
+								<h3 class="climate__subtitle subtitle subtitle--left subtitle--small subtitle--bold">
+									Полученные показатели
+								</h3>
+								<table class="climate__table">
+									<tbody>
+										<tr>
+											<td class="left">
+												Термическое сопротивление ограждающей конструкции [Rк]
+											</td>
+
+											<td></td>
+											<td class="red">0,00</td>
+											<td></td>
+
+											<td></td>
+										</tr>
+										<tr>
+
+											<td class="left">
+												Общее сопротивление теплопередаче ограждающей
+												конструкции [Rо]
+											</td>
+
+											<td></td>
+											<td class="red">0,00</td>
+											<td></td>
+
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+
+
+							</div>
+							<div class="climate__box-inner">
+								<h3 class="climate__subtitle subtitle subtitle--left subtitle--small subtitle--bold">
+									Нормативные показатели
+								</h3>
+								<table class="climate__table">
+									<tbody>
+										<tr>
+											<td class="left">
+												Санитарно-гигиенические требования [Rс]
+											</td>
+
+											<td></td>
+											<td class="red">1,26</td>
+											<td></td>
+
+											<td></td>
+										</tr>
+										<tr>
+
+											<td class="left">
+												Нормируемое значение поэлементных требований [Rэ]
+											</td>
+
+											<td></td>
+											<td class="red">1,82</td>
+											<td></td>
+
+											<td></td>
+										</tr>
+										<tr>
+
+											<td class="left">
+												Базовое значение поэлементных требований [Rт]
+											</td>
+
+											<td></td>
+											<td class="red">2,90</td>
+											<td></td>
+
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="climate__item">
+					<h2 class="climate__title title title--left title--verify">
+						Выводы теплотехнического расчёта
+					</h2>
+					<ul class="climate__list-output">
+						<li class="climate__item-output">
+							<img src="img/climate/thermometer_red.png" alt="thermometer" class="climate__img" />
+							<p class="climate__text">
+								Ограждающая конструкция не удовлетворяет санитарно-гигиеническим
+								нормам по тепловой защите.
+							</p>
+						</li>
+						<li class="climate__item-output">
+							<img src="img/climate/thermometer_red.png" alt="thermometer" class="climate__img" />
+							<p class="climate__text">
+								Ограждающая конструкция не удовлетворяет нормам (поэлементные
+								требования) по тепловой защите.
+							</p>
+						</li>
+						<li class="climate__item-output">
+							<img src="img/climate/damp_red.png" alt="damp" class="climate__img" />
+							<p class="climate__text">
+								Ограждающая конструкция не удовлетворяет нормам по защите от
+								переувлажнения.
+							</p>
+						</li>
+						<li class="climate__item-output">
+							<img src="img/climate/radiator_red.png" alt="radiator" class="climate__img" />
+							<p class="climate__text">
+								Потери тепла через 1 м² за отопительный сезон
+								<span class="climate__span">0.00</span> кВт•ч
+							</p>
+						</li>
+						<li class="climate__item-output">
+							<img src="img/climate/air_conditioner_red.png" alt="air" class="climate__img" />
+							<p class="climate__text">
+								Потери тепла через 1 м² за 1 час при температуре самой холодной
+								пятидневки <span class="climate__span">0.00</span> кВт•ч
+							</p>
+						</li>
+					</ul>
+					<div class="climate__btn-group">
+						<a class="climate__btn btn" href="#">назад</a>
+						<a class="climate__btn btn" href="#">Подтвердить</a>
+					</div>
+
+				</li>
+
+			</ul>
+
+		</form>
+	</div>
+</section>
